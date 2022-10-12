@@ -16,6 +16,9 @@ struct ServiceError: Error,Codable {
 extension ResponseHandler {
     func defaultParseResponse<T: Codable>(data: Data, response: HTTPURLResponse) throws -> T {
         let jsonDecoder = JSONDecoder()
+        // Allows us to convert the data from the API from snake_case to cameCase
+        jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
+        
         do {
             let body = try jsonDecoder.decode(T.self, from: data)
             if response.statusCode == 200 {

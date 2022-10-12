@@ -14,8 +14,19 @@ class HomeViewModel: ObservableObject {
     var limit: Int = 20
     var page: Int = 0
     
-    func loadVideo() {
+    func loadVideo(param: [String: Any], completion: @escaping (ResponseBody?, ServiceError?) -> ()) {
         print("loadVideo")
+        
+        let request = VideoAPI()
+        
+        let apiLoader = APILoader(apiHandler: request)
+        apiLoader.loadAPIRequest(requestData: param) { (model, error) in
+            if let _ = error {
+                completion(nil, error)
+            } else {
+                completion(model, nil)
+            }
+        }
     }
     
     func loadMore() {
@@ -24,7 +35,6 @@ class HomeViewModel: ObservableObject {
     
     func refresh() {
         print("refresh")
-    }
-    
+    }    
     
 }

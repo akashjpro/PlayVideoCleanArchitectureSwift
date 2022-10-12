@@ -34,6 +34,7 @@
 		96FB2A7628F67B5F00DE934C /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB2A7528F67B5F00DE934C /* Query.swift */; };
 		96FB2A7828F67B7C00DE934C /* FetchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB2A7728F67B7C00DE934C /* FetchState.swift */; };
 		96FB2A7A28F67B9500DE934C /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB2A7928F67B9500DE934C /* APIError.swift */; };
+		96FB2A7C28F6A3E800DE934C /* VideoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB2A7B28F6A3E800DE934C /* VideoAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		96FB2A7528F67B5F00DE934C /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
 		96FB2A7728F67B7C00DE934C /* FetchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchState.swift; sourceTree = "<group>"; };
 		96FB2A7928F67B9500DE934C /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		96FB2A7B28F6A3E800DE934C /* VideoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,6 +302,7 @@
 			children = (
 				9684A92328F55F900082B5E5 /* GalleryAPI.swift */,
 				9684A92528F560010082B5E5 /* GalleryModel.swift */,
+				96FB2A7B28F6A3E800DE934C /* VideoAPI.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				9684A90428F550D20082B5E5 /* ResponseHandler+Extension.swift in Sources */,
 				96FB2A7828F67B7C00DE934C /* FetchState.swift in Sources */,
 				9684A8DF28F53E170082B5E5 /* PlayVideoCleanArchitectureApp.swift in Sources */,
+				96FB2A7C28F6A3E800DE934C /* VideoAPI.swift in Sources */,
 				9684A92628F560010082B5E5 /* GalleryModel.swift in Sources */,
 				96FB2A7628F67B5F00DE934C /* Query.swift in Sources */,
 				9684A91A28F558880082B5E5 /* RequestError.swift in Sources */,
@@ -535,6 +539,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -564,6 +569,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

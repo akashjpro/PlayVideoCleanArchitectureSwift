@@ -9,7 +9,7 @@ import Foundation
 
 // ResponseBody structure that follow the JSON data we get from the API
 // Note: We're not adding all the variables returned from the API since not all of them are used in the app
-struct ResponseBody: Decodable {
+struct ResponseBody: Codable {
     var page: Int
     var perPage: Int
     var totalResults: Int
@@ -18,7 +18,7 @@ struct ResponseBody: Decodable {
     
 }
 
-struct Video: Identifiable, Decodable {
+struct Video: Identifiable, Codable {
     var id: Int
     var image: String
     var duration: Int
@@ -31,13 +31,13 @@ struct Video: Identifiable, Decodable {
 //           case videoFiles = "video_files"
 //       }
     
-    struct User: Identifiable, Decodable {
+    struct User: Identifiable, Codable {
         var id: Int
         var name: String
         var url: String
     }
     
-    struct VideoFile: Identifiable, Decodable {
+    struct VideoFile: Identifiable, Codable {
         var id: Int
         var quality: String
         var fileType: String
