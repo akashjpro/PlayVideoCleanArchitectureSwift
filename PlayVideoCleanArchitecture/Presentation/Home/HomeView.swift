@@ -27,7 +27,7 @@ struct HomeView: View {
                     ForEach(Query.allCases, id: \.self) { searchQuery in
                         QueryTag(query: searchQuery, isSelected: homeVM.selectedQuery == searchQuery)
                             .onTapGesture {
-                                // When the user taps on a QueryTag, we'll change the selectedQuery from VideoManager
+                                // When the user taps on a QueryTag, we'll change the selectedQuery from HomeViewModel
                                 homeVM.selectedQuery = searchQuery
                                 
                                 homeVM.completionHandler?()
@@ -36,9 +36,7 @@ struct HomeView: View {
                 }
                 
                 ScrollViewReader { proxyReader in
-                    
                     ScrollView {
-                        
                         if homeVM.videos.isEmpty {
                             ProgressView()
                         } else {
@@ -91,14 +89,6 @@ struct HomeView: View {
                                 .background(Color("red"))
                                 .clipShape(Circle())
                                 .shadow(color: Color.black.opacity(0.09), radius: 5, x: 5, y: 5)
-                            
-//                            Image(systemName: "arrow.up")
-//                                                            .font(.system(size: 20, weight: .semibold))
-//                                                            .foregroundColor(.white)
-//                                .padding()
-//                                //.background(.regularMaterial)
-//                                .cornerRadius(50)
-//                                .shadow(color: Color.black.opacity(0.09), radius: 5, x: 5, y: 5)
                         })
                         .padding(.trailing)
                         .padding(.bottom, getSafeArea().bottom == 0 ? 12 : 0)
