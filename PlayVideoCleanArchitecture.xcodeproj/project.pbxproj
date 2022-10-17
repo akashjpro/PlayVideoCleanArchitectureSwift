@@ -31,6 +31,10 @@
 		9684A92628F560010082B5E5 /* GalleryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9684A92528F560010082B5E5 /* GalleryModel.swift */; };
 		96A1F34628F90D3F00363802 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A1F34528F90D3F00363802 /* UseCase.swift */; };
 		96A1F34828F90F2C00363802 /* VideoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A1F34728F90F2C00363802 /* VideoEntity.swift */; };
+		96E21F3D28FD3821005F3231 /* VideoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E21F3C28FD3821005F3231 /* VideoCard.swift */; };
+		96E21F3F28FD3BAD005F3231 /* QueryTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E21F3E28FD3BAD005F3231 /* QueryTag.swift */; };
+		96E21F4128FD3C64005F3231 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E21F4028FD3C64005F3231 /* VideoView.swift */; };
+		96EAE2CC28FD32D700656C47 /* ListPlaceholderRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EAE2CB28FD32D700656C47 /* ListPlaceholderRowView.swift */; };
 		96FB2A7028F66B2F00DE934C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB2A6F28F66B2F00DE934C /* HomeViewModel.swift */; };
 		96FB2A7428F6710700DE934C /* ResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB2A7328F6710700DE934C /* ResponseBody.swift */; };
 		96FB2A7628F67B5F00DE934C /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB2A7528F67B5F00DE934C /* Query.swift */; };
@@ -65,6 +69,10 @@
 		9684A92528F560010082B5E5 /* GalleryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryModel.swift; sourceTree = "<group>"; };
 		96A1F34528F90D3F00363802 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
 		96A1F34728F90F2C00363802 /* VideoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEntity.swift; sourceTree = "<group>"; };
+		96E21F3C28FD3821005F3231 /* VideoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCard.swift; sourceTree = "<group>"; };
+		96E21F3E28FD3BAD005F3231 /* QueryTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryTag.swift; sourceTree = "<group>"; };
+		96E21F4028FD3C64005F3231 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		96EAE2CB28FD32D700656C47 /* ListPlaceholderRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPlaceholderRowView.swift; sourceTree = "<group>"; };
 		96FB2A6F28F66B2F00DE934C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		96FB2A7328F6710700DE934C /* ResponseBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseBody.swift; sourceTree = "<group>"; };
 		96FB2A7528F67B5F00DE934C /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
@@ -241,6 +249,10 @@
 			children = (
 				9684A8FA28F5463C0082B5E5 /* HomeView.swift */,
 				96FB2A6F28F66B2F00DE934C /* HomeViewModel.swift */,
+				96EAE2CB28FD32D700656C47 /* ListPlaceholderRowView.swift */,
+				96E21F3C28FD3821005F3231 /* VideoCard.swift */,
+				96E21F3E28FD3BAD005F3231 /* QueryTag.swift */,
+				96E21F4028FD3C64005F3231 /* VideoView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -384,8 +396,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9684A90E28F553510082B5E5 /* Observable.swift in Sources */,
+				96E21F3D28FD3821005F3231 /* VideoCard.swift in Sources */,
 				9684A8FB28F5463C0082B5E5 /* HomeView.swift in Sources */,
 				9684A91828F558690082B5E5 /* HTTPMethod.swift in Sources */,
+				96E21F3F28FD3BAD005F3231 /* QueryTag.swift in Sources */,
 				9684A91C28F558D70082B5E5 /* MoviesEndpoint.swift in Sources */,
 				9684A91628F557FD0082B5E5 /* HTTPClient.swift in Sources */,
 				9684A90228F550B10082B5E5 /* RequestHandler+Extension.swift in Sources */,
@@ -393,6 +407,7 @@
 				9684A90628F550F50082B5E5 /* APILoader.swift in Sources */,
 				9684A92128F55D830082B5E5 /* ViewModelProtocol.swift in Sources */,
 				9684A8E128F53E170082B5E5 /* ContentView.swift in Sources */,
+				96EAE2CC28FD32D700656C47 /* ListPlaceholderRowView.swift in Sources */,
 				96FB2A7428F6710700DE934C /* ResponseBody.swift in Sources */,
 				9684A90A28F551430082B5E5 /* APIPath.swift in Sources */,
 				9684A90C28F553210082B5E5 /* Constants.swift in Sources */,
@@ -408,6 +423,7 @@
 				9684A92428F55F900082B5E5 /* GalleryAPI.swift in Sources */,
 				9684A90828F5511A0082B5E5 /* APIEnvironment.swift in Sources */,
 				9684A91428F557DC0082B5E5 /* Endpoint.swift in Sources */,
+				96E21F4128FD3C64005F3231 /* VideoView.swift in Sources */,
 				96A1F34628F90D3F00363802 /* UseCase.swift in Sources */,
 				96FB2A7A28F67B9500DE934C /* APIError.swift in Sources */,
 				9684A90028F550760082B5E5 /* APIHandler.swift in Sources */,
