@@ -34,17 +34,6 @@ class HomeViewModel: ObservableObject {
         self.completionHandler = completionHandler
     }
     
-    func loadVideo(params: [String: Any], completion: @escaping (ResponseBody?, ServiceError?) -> ()) {
-        print("loadVideo")
-        
-        loadVideoAPIUseCase.call(params: params, completion: completion)
-    }
-    
-    func loadMore() {
-        print("loadMore")
-        loadHome()
-    }
-    
     func loadHome() {
         self.state = .isLoading
         loadVideo(params: ["searchTerm": self.selectedQuery.toString, "limit": self.limit, "page": self.page], completion: {(results, error) in
@@ -64,6 +53,17 @@ class HomeViewModel: ObservableObject {
                 }
             }
         })
+    }
+    
+    func loadVideo(params: [String: Any], completion: @escaping (ResponseBody?, ServiceError?) -> ()) {
+        print("loadVideo")
+        
+        loadVideoAPIUseCase.call(params: params, completion: completion)
+    }
+    
+    func loadMore() {
+        print("loadMore")
+        loadHome()
     }
     
     func refresh() {
