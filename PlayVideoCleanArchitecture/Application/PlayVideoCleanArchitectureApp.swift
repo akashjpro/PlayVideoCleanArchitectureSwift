@@ -10,8 +10,6 @@ import SwiftUI
 @main
 struct PlayVideoCleanArchitectureApp: App {
     @StateObject private var appControl = AppControl.shared
-    @State private var showingAlert = false
-    
 
     var body: some Scene {
         WindowGroup {
