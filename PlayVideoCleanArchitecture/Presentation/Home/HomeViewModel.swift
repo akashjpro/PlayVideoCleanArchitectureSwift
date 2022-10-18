@@ -23,36 +23,12 @@ class HomeViewModel: ObservableObject {
         }
     }
     
-    var limit: Int = 20
-    var page: Int = 0
-    
-    
-    var completionHandler: (() -> Void)?
-    
+    private var limit: Int = 20
+    private var page: Int = 0
     
     private let loadVideoAPIUseCase: LoadVideoAPIUseCase = LoadVideoAPIUseCase()
     
-    init() {
-//        self.state = .isLoading
-//        loadVideo(params: ["searchTerm": self.selectedQuery.toString, "limit": self.limit, "page": self.page], completion: {(results, error) in
-//            DispatchQueue.main.async {
-//                if let error = error {
-//                   print("ERROR=====")
-//                    self.state = .error(error.localizedDescription)
-//                } else {
-//                    if let resultsUnwrap = results {
-//                        for video in resultsUnwrap.videos {
-//                            self.videos.append(video)
-//                        }
-//
-//                        self.page += 1
-//                        self.state = (resultsUnwrap.videos.count == self.limit) ? .good : .loadedAll
-//                    }
-//                }
-//            }
-//        })
-    }
-    
+    var completionHandler: (() -> Void)?
     
     func setClickCompletion(completionHandler: @escaping (() -> Void)){
         self.completionHandler = completionHandler
