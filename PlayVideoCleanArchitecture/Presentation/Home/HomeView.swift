@@ -97,10 +97,11 @@ struct HomeView: View {
                         , alignment: .bottomTrailing
                     )
                     .onAppear {
-                        
                         homeVM.setClickCompletion(completionHandler: {
                             proxyReader.scrollTo(ID_SCROLL, anchor: .top)
                         })
+                        
+                        homeVM.loadHome()
                     }
                 
                 }

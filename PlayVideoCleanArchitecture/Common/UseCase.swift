@@ -11,5 +11,5 @@ public protocol UseCase {
     
     associatedtype T
     
-    func call(url: String?, params: [String: Any], completion: @escaping(T) -> Void)
+    func call(params: [String: Any], completion: @escaping(T) -> Void)
 }

@@ -33,10 +33,10 @@ struct ListPlaceholderRowView: View {
     }
 }
 
-struct ListPlaceholderRowView_Previews: PreviewProvider {
-    static var previews: some View {
-        ListPlaceholderRowView(state: .noResults,
-                               loadMore: { })
-    }
-}
+//struct ListPlaceholderRowView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ListPlaceholderRowView(state: .noResults,
+//                               loadMore: { })
+//    }
+//}
 

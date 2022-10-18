@@ -31,6 +31,12 @@
 		9684A92628F560010082B5E5 /* GalleryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9684A92528F560010082B5E5 /* GalleryModel.swift */; };
 		96A1F34628F90D3F00363802 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A1F34528F90D3F00363802 /* UseCase.swift */; };
 		96A1F34828F90F2C00363802 /* VideoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A1F34728F90F2C00363802 /* VideoEntity.swift */; };
+		96A7FF6D28FE500000E99CE3 /* LoadVideoAPIUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7FF6C28FE500000E99CE3 /* LoadVideoAPIUseCase.swift */; };
+		96A7FF6F28FE52D100E99CE3 /* LoadVideoAPIRespository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7FF6E28FE52D100E99CE3 /* LoadVideoAPIRespository.swift */; };
+		96A7FF7128FE545F00E99CE3 /* LoadVideoAPIRespositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7FF7028FE545F00E99CE3 /* LoadVideoAPIRespositoryImpl.swift */; };
+		96A7FF7328FE54D400E99CE3 /* ConnectCheckUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7FF7228FE54D400E99CE3 /* ConnectCheckUtil.swift */; };
+		96A7FF7728FE5D6A00E99CE3 /* AppControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7FF7628FE5D6A00E99CE3 /* AppControl.swift */; };
+		96A7FF7928FE5E1900E99CE3 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7FF7828FE5E1900E99CE3 /* ErrorView.swift */; };
 		96E21F3D28FD3821005F3231 /* VideoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E21F3C28FD3821005F3231 /* VideoCard.swift */; };
 		96E21F3F28FD3BAD005F3231 /* QueryTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E21F3E28FD3BAD005F3231 /* QueryTag.swift */; };
 		96E21F4128FD3C64005F3231 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E21F4028FD3C64005F3231 /* VideoView.swift */; };
@@ -69,6 +75,12 @@
 		9684A92528F560010082B5E5 /* GalleryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryModel.swift; sourceTree = "<group>"; };
 		96A1F34528F90D3F00363802 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
 		96A1F34728F90F2C00363802 /* VideoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEntity.swift; sourceTree = "<group>"; };
+		96A7FF6C28FE500000E99CE3 /* LoadVideoAPIUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadVideoAPIUseCase.swift; sourceTree = "<group>"; };
+		96A7FF6E28FE52D100E99CE3 /* LoadVideoAPIRespository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadVideoAPIRespository.swift; sourceTree = "<group>"; };
+		96A7FF7028FE545F00E99CE3 /* LoadVideoAPIRespositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadVideoAPIRespositoryImpl.swift; sourceTree = "<group>"; };
+		96A7FF7228FE54D400E99CE3 /* ConnectCheckUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectCheckUtil.swift; sourceTree = "<group>"; };
+		96A7FF7628FE5D6A00E99CE3 /* AppControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppControl.swift; sourceTree = "<group>"; };
+		96A7FF7828FE5E1900E99CE3 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		96E21F3C28FD3821005F3231 /* VideoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCard.swift; sourceTree = "<group>"; };
 		96E21F3E28FD3BAD005F3231 /* QueryTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryTag.swift; sourceTree = "<group>"; };
 		96E21F4028FD3C64005F3231 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
@@ -196,6 +208,9 @@
 		9684A8F228F540D70082B5E5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				96A7FF7228FE54D400E99CE3 /* ConnectCheckUtil.swift */,
+				96A7FF7628FE5D6A00E99CE3 /* AppControl.swift */,
+				96A7FF7828FE5E1900E99CE3 /* ErrorView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -210,6 +225,7 @@
 		9684A8F428F541C00082B5E5 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				96A7FF6E28FE52D100E99CE3 /* LoadVideoAPIRespository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -217,6 +233,7 @@
 		9684A8F528F541D60082B5E5 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				96A7FF6C28FE500000E99CE3 /* LoadVideoAPIUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -240,6 +257,7 @@
 		9684A8F828F542750082B5E5 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				96A7FF7028FE545F00E99CE3 /* LoadVideoAPIRespositoryImpl.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -407,12 +425,16 @@
 				9684A90628F550F50082B5E5 /* APILoader.swift in Sources */,
 				9684A92128F55D830082B5E5 /* ViewModelProtocol.swift in Sources */,
 				9684A8E128F53E170082B5E5 /* ContentView.swift in Sources */,
+				96A7FF6D28FE500000E99CE3 /* LoadVideoAPIUseCase.swift in Sources */,
 				96EAE2CC28FD32D700656C47 /* ListPlaceholderRowView.swift in Sources */,
+				96A7FF7728FE5D6A00E99CE3 /* AppControl.swift in Sources */,
 				96FB2A7428F6710700DE934C /* ResponseBody.swift in Sources */,
+				96A7FF7328FE54D400E99CE3 /* ConnectCheckUtil.swift in Sources */,
 				9684A90A28F551430082B5E5 /* APIPath.swift in Sources */,
 				9684A90C28F553210082B5E5 /* Constants.swift in Sources */,
 				9684A90428F550D20082B5E5 /* ResponseHandler+Extension.swift in Sources */,
 				96FB2A7828F67B7C00DE934C /* FetchState.swift in Sources */,
+				96A7FF7928FE5E1900E99CE3 /* ErrorView.swift in Sources */,
 				9684A8DF28F53E170082B5E5 /* PlayVideoCleanArchitectureApp.swift in Sources */,
 				96FB2A7C28F6A3E800DE934C /* VideoAPI.swift in Sources */,
 				96A1F34828F90F2C00363802 /* VideoEntity.swift in Sources */,
@@ -425,7 +447,9 @@
 				9684A91428F557DC0082B5E5 /* Endpoint.swift in Sources */,
 				96E21F4128FD3C64005F3231 /* VideoView.swift in Sources */,
 				96A1F34628F90D3F00363802 /* UseCase.swift in Sources */,
+				96A7FF7128FE545F00E99CE3 /* LoadVideoAPIRespositoryImpl.swift in Sources */,
 				96FB2A7A28F67B9500DE934C /* APIError.swift in Sources */,
+				96A7FF6F28FE52D100E99CE3 /* LoadVideoAPIRespository.swift in Sources */,
 				9684A90028F550760082B5E5 /* APIHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
