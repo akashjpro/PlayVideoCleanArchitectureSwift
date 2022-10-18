@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9684A8DF28F53E170082B5E5 /* PlayVideoCleanArchitectureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9684A8DE28F53E170082B5E5 /* PlayVideoCleanArchitectureApp.swift */; };
-		9684A8E128F53E170082B5E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9684A8E028F53E170082B5E5 /* ContentView.swift */; };
 		9684A8E328F53E1A0082B5E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9684A8E228F53E1A0082B5E5 /* Assets.xcassets */; };
 		9684A8E628F53E1A0082B5E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9684A8E528F53E1A0082B5E5 /* Preview Assets.xcassets */; };
 		9684A8FB28F5463C0082B5E5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9684A8FA28F5463C0082B5E5 /* HomeView.swift */; };
@@ -45,7 +44,6 @@
 /* Begin PBXFileReference section */
 		9684A8DB28F53E170082B5E5 /* PlayVideoCleanArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayVideoCleanArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9684A8DE28F53E170082B5E5 /* PlayVideoCleanArchitectureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVideoCleanArchitectureApp.swift; sourceTree = "<group>"; };
-		9684A8E028F53E170082B5E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9684A8E228F53E1A0082B5E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9684A8E528F53E1A0082B5E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9684A8FA28F5463C0082B5E5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -145,7 +143,6 @@
 			isa = PBXGroup;
 			children = (
 				9684A8DE28F53E170082B5E5 /* PlayVideoCleanArchitectureApp.swift */,
-				9684A8E028F53E170082B5E5 /* ContentView.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -368,7 +365,6 @@
 				9684A91F28F55D690082B5E5 /* ViewModel.swift in Sources */,
 				9684A90628F550F50082B5E5 /* APILoader.swift in Sources */,
 				9684A92128F55D830082B5E5 /* ViewModelProtocol.swift in Sources */,
-				9684A8E128F53E170082B5E5 /* ContentView.swift in Sources */,
 				96A7FF6D28FE500000E99CE3 /* LoadVideoAPIUseCase.swift in Sources */,
 				96EAE2CC28FD32D700656C47 /* ListPlaceholderRowView.swift in Sources */,
 				96A7FF7728FE5D6A00E99CE3 /* AppControl.swift in Sources */,
